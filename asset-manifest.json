@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/time-tracker-frontend/static/css/main.294c9f7e.css",
+    "main.js": "/time-tracker-frontend/static/js/main.15a31ac9.js",
+    "static/js/592.bf6ca574.chunk.js": "/time-tracker-frontend/static/js/592.bf6ca574.chunk.js",
+    "static/media/background.png": "/time-tracker-frontend/static/media/background.3dc9beca2320a90763ba.png",
+    "static/media/note.png": "/time-tracker-frontend/static/media/note.94867e8981b70cbc78b6.png",
+    "static/media/laundry.png": "/time-tracker-frontend/static/media/laundry.388113c9fde4c21ad4bc.png",
+    "static/media/washing-machine.png": "/time-tracker-frontend/static/media/washing-machine.bb7dcc864a8de663da46.png",
+    "static/media/bucket.png": "/time-tracker-frontend/static/media/bucket.900b78b6b085ae1dcfc4.png",
+    "static/media/preloader-logo.png": "/time-tracker-frontend/static/media/preloader-logo.62f5dbc76bbab7d42aa3.png",
+    "static/media/logo.png": "/time-tracker-frontend/static/media/logo.81c1370493399a9f563b.png",
+    "static/media/mail.png": "/time-tracker-frontend/static/media/mail.2c378c9ee25927123f7d.png",
+    "static/media/hidden.png": "/time-tracker-frontend/static/media/hidden.a81cfb08e8b44aba3209.png",
+    "static/media/view.png": "/time-tracker-frontend/static/media/view.0b5c67b9c9c6e2b4b7d1.png",
+    "static/media/welcome-bg.png": "/time-tracker-frontend/static/media/welcome-bg.baf8c6076db34115308d.png",
+    "index.html": "/time-tracker-frontend/index.html",
+    "main.294c9f7e.css.map": "/time-tracker-frontend/static/css/main.294c9f7e.css.map",
+    "main.15a31ac9.js.map": "/time-tracker-frontend/static/js/main.15a31ac9.js.map",
+    "592.bf6ca574.chunk.js.map": "/time-tracker-frontend/static/js/592.bf6ca574.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.294c9f7e.css",
+    "static/js/main.15a31ac9.js"
+  ]
+}
