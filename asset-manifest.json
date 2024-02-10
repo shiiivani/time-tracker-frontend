@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/time-tracker-frontend/static/css/main.294c9f7e.css",
-    "main.js": "/time-tracker-frontend/static/js/main.15a31ac9.js",
+    "main.css": "/time-tracker-frontend/static/css/main.d37c1449.css",
+    "main.js": "/time-tracker-frontend/static/js/main.9d188c24.js",
     "static/js/592.bf6ca574.chunk.js": "/time-tracker-frontend/static/js/592.bf6ca574.chunk.js",
     "static/media/background.png": "/time-tracker-frontend/static/media/background.3dc9beca2320a90763ba.png",
     "static/media/note.png": "/time-tracker-frontend/static/media/note.94867e8981b70cbc78b6.png",
@@ -15,12 +15,12 @@
     "static/media/view.png": "/time-tracker-frontend/static/media/view.0b5c67b9c9c6e2b4b7d1.png",
     "static/media/welcome-bg.png": "/time-tracker-frontend/static/media/welcome-bg.baf8c6076db34115308d.png",
     "index.html": "/time-tracker-frontend/index.html",
-    "main.294c9f7e.css.map": "/time-tracker-frontend/static/css/main.294c9f7e.css.map",
-    "main.15a31ac9.js.map": "/time-tracker-frontend/static/js/main.15a31ac9.js.map",
+    "main.d37c1449.css.map": "/time-tracker-frontend/static/css/main.d37c1449.css.map",
+    "main.9d188c24.js.map": "/time-tracker-frontend/static/js/main.9d188c24.js.map",
     "592.bf6ca574.chunk.js.map": "/time-tracker-frontend/static/js/592.bf6ca574.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.294c9f7e.css",
-    "static/js/main.15a31ac9.js"
+    "static/css/main.d37c1449.css",
+    "static/js/main.9d188c24.js"
   ]
 }
