@@ -35,9 +35,17 @@ function Signin() {
       password,
     })
       .then((user) => {
-        localStorage.setItem("email", user.data.email);
-        if (email === "admin@dhobimate.com" && password === "1234567890") {
+        if (email === "" || password === "") {
+          setErr(true);
+          setTimeout(() => {
+            setErr(false);
+          }, 2000);
+        } else if (
+          email === "admin@dhobimate.com" &&
+          password === "1234567890"
+        ) {
           navigate("/time-tracker-frontend/Admin");
+          localStorage.setItem("email", user.data.email);
         } else if (
           (password === "1234567890" &&
             email === "dhobimate.manipal@gmail.com") ||
@@ -45,6 +53,7 @@ function Signin() {
           "dhobimate.koramangala@gmail.com"
         ) {
           navigate("/time-tracker-frontend/");
+          localStorage.setItem("email", user.data.email);
         } else {
           setErr(true);
           setTimeout(() => {
@@ -53,6 +62,8 @@ function Signin() {
         }
       })
       .catch();
+    setEmail("");
+    setPassword("");
   };
 
   useEffect(() => {
@@ -84,12 +95,12 @@ function Signin() {
       <div className="logo">
         <img src={logo} width="180px" />
       </div>
-      {err && (
+      {/* {err && (
         <div className="alert" style={{ top: err ? "110px" : "-100px" }}>
           <img src={error} width="25px" alt="Error Icon" />
           <p>Username or Password is incorrect. Please try again.</p>
         </div>
-      )}
+      )} */}
       <div className="note">
         <img src={note} width="300px" alt="A note containing credentials" />
       </div>
@@ -97,6 +108,12 @@ function Signin() {
         <div className="signinContainer">
           <h3>Sign in</h3>
           {/* <p className="error">{err}</p> */}
+          {err && (
+            <div className="alert" style={{ top: err ? "110px" : "-100px" }}>
+              <img src={error} width="20px" alt="Error Icon" />
+              <p>Email Id or Password is incorrect. Please try again.</p>
+            </div>
+          )}
           <div className="input">
             <img src={mail} width="20px" />
             <input

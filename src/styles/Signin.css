@@ -14,18 +14,19 @@
 .signin .alert {
     border: #EC8884 1px solid;
     border-radius: 5px;
-    width: 35%;
+    width: 310px;
     background-color: #FDF5F5;
     color: #B53D37;
     font-family: 'Archivo', sans-serif;
-    font-size: 1rem;
-    padding: 15px;
+    font-size: 0.85rem;
+    padding: 10px;
     display: flex;
     align-items: center;
-    position: absolute;
+    margin-top: 10px;
+    /* position: absolute;
     top: 110px;
-    left: 30%;
-    transition: top 0.5s ease;
+    left: 32%; */
+    /* transition: top 0.5s ease; */
 }
 
 .alert img {
@@ -74,7 +75,7 @@
     justify-content: flex-start;
     background-color: #EEEEEE;
     border-radius: 5px;
-    margin-top: 35px;
+    margin-top: 30px;
     padding: 12px;
     position:relative;
 }
@@ -154,6 +155,10 @@ width: 200px;
         width: 60%;
         padding: 30px;
     }
+    .signin .alert {
+        width: 90%;
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -161,3 +166,9 @@ width: 200px;
         display: none;
      }
  }
+
+ @media only screen and (max-width: 347px) {
+    .signinContainer .input input {
+        width: 80%;
+    }
+}

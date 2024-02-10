@@ -54,7 +54,7 @@ padding: 20px;
 .homepage .alert {
     border: #EC8884 1px solid;
     border-radius: 5px;
-    width: 35%;
+    width: 250px;
     background-color: #FDF5F5;
     color: #B53D37;
     font-family: 'Archivo', sans-serif;
@@ -64,6 +64,7 @@ padding: 20px;
     align-items: center;
     position: absolute;
     left: 40%;
+    top: 30px;
     transition: top 0.5s ease;
 }
 
@@ -363,6 +364,11 @@ display: none;
         margin-right: auto;
         width: 80%;
     }
+
+    .homepage .alert {
+        left: 30%;
+        padding: 10px;
+    }
 }
 
 @media only screen and (max-width: 890px) {
@@ -380,6 +386,15 @@ display: none;
     }
     .middle .logoContainer {
         margin-right: 25px;
+    }
+
+    .homepage .alert {
+        font-size: 0.9rem;
+        top: 50px;
+    }
+
+    .homepage .alert img{
+        width: 20px;
     }
 }
 
@@ -458,6 +473,10 @@ font-size: 1.4rem;
     .containers .duration {
         margin-bottom: 15px;
     }
+
+    .homepage .alert {
+        width:200px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -467,6 +486,12 @@ font-size: 1.4rem;
 
     .sidebar .clock, .sidebar .report, .sidebar .options {
         padding-left: 8px;
+    }
+
+    .homepage .alert {
+        left: 23%;
+        width: 45%;
+        font-size: 0.7rem;
     }
 
 }

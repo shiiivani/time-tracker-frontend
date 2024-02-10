@@ -233,7 +233,7 @@ function Homepage() {
           );
         })}
         {err && (
-          <div className="alert" style={{ top: err ? "30px" : "-100px" }}>
+          <div className="alert">
             <img src={error} width="25px" alt="Error Icon" />
             <p>User already checked in.</p>
           </div>
