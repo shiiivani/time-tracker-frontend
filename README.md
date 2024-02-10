@@ -19,4 +19,4 @@ The project is deployed using the following services:
 Frontend: GitHub Pages
 Backend: Render
 
-To see it live visit this link: https://shiiivani.github.io/time-tracker-frontend/Signin
+To see it live visit this link: https://shiiivani.github.io/time-tracker-frontend/
