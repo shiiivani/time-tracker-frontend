@@ -66,9 +66,7 @@ function Homepage() {
         const userData = response.data;
         setUserInfo([userData]);
       })
-      .catch((error) => {
-        console.error("Error fetching user information:", error);
-      });
+      .catch((error) => {});
   }, []);
 
   const Checkin = async () => {
@@ -100,9 +98,7 @@ function Homepage() {
           email: email,
         }
       );
-    } catch (error) {
-      console.error("Error checking out:", error);
-    }
+    } catch (error) {}
     fetchTime();
   };
 
@@ -134,9 +130,7 @@ function Homepage() {
         setCheckout(formatTime(logoutTime));
         setDuration(duration);
       }
-    } catch (error) {
-      console.error("Error fetching the data:", error);
-    }
+    } catch (error) {}
   };
 
   useEffect(() => {

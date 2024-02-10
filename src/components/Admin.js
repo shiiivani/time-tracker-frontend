@@ -208,9 +208,7 @@ function Admin() {
         }
       );
       fetchData();
-    } catch (error) {
-      console.error("Error updating login and logout times:", error);
-    }
+    } catch (error) {}
     setLogInTime("");
     setLogOutTime("");
   };

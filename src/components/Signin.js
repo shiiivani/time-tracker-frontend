@@ -52,7 +52,7 @@ function Signin() {
           }, 2000);
         }
       })
-      .catch((err) => console.log(err));
+      .catch();
   };
 
   useEffect(() => {
