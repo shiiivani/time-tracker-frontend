@@ -59,9 +59,11 @@ function Signin() {
     const delayTimeout = setTimeout(() => {
       setShowPreloader(false);
     }, 2000);
-    if (localStorage.getItem("email") === "admin@dhobimate.com") {
+    if (localStorage.getItem("email") === "undefined") {
       navigate("/time-tracker-frontend/Admin");
-    } else if (localStorage.getItem("email")) {
+    } else if (
+      localStorage.getItem("email") === "dhobimate.manipal@gmail.com"
+    ) {
       navigate("/time-tracker-frontend/");
     } else if (localStorage.getItem("email") === null) {
       navigate("/time-tracker-frontend/Signin");

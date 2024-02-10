@@ -35,9 +35,10 @@ function Reports() {
           }
         );
         setLogData(response.data[0].loginLogoutTimes);
-        console.log("Data fetched successfully");
       } catch (error) {
-        console.error("Error fetching data:", error);
+        if (error) {
+          setLogData([]);
+        }
       }
     };
 

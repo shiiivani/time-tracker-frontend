@@ -78,6 +78,7 @@ padding: 20px;
     font-family: "Archivo", sans-serif;
     padding-right: 20px;
     padding-top: 10px;
+    z-index: 1;
 }
 
 .rightside h5 {

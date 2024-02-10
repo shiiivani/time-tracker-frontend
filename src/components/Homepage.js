@@ -27,9 +27,11 @@ function Homepage() {
     const currentDate = new Date().toLocaleDateString("en-US", options);
     setCurrentDate(currentDate);
     getGreetingMessage();
-    if (localStorage.getItem("email") === "admin@dhobimate.com") {
+    if (localStorage.getItem("email") === "undefined") {
       navigate("/time-tracker-frontend/Admin");
-    } else if (localStorage.getItem("email")) {
+    } else if (
+      localStorage.getItem("email") === "dhobimate.manipal@gmail.com"
+    ) {
       navigate("/time-tracker-frontend/");
     } else if (localStorage.getItem("email") === null) {
       navigate("/time-tracker-frontend/Signin");
@@ -194,21 +196,23 @@ function Homepage() {
           <p>Report</p>
         </div>
       </div>{" "}
-      {userInfo.map((user) => {
-        return (
-          <div className="rightside" key={user.name}>
-            <h5>{user.name}</h5>
-            <img
-              className="logo"
-              src={user.logo}
-              width="45px"
-              onClick={() => {
-                setActivelogout(!activeLogout);
-              }}
-            />
-          </div>
-        );
-      })}{" "}
+      <div className="rightside">
+        {userInfo.map((user) => {
+          return (
+            <>
+              <h5 key={user.email}>{user.name}</h5>
+              <img
+                className="logo"
+                src={user.logo}
+                width="45px"
+                onClick={() => {
+                  setActivelogout(!activeLogout);
+                }}
+              />
+            </>
+          );
+        })}
+      </div>
       <div
         className={activeLogout ? "logout active" : "logout notActive"}
         onClick={logOut}

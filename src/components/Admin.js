@@ -30,9 +30,11 @@ function Admin() {
     // return currentDate;
     setCurrentDate(currentDate);
     getGreetingMessage();
-    if (localStorage.getItem("email") === "admin@dhobimate.com") {
+    if (localStorage.getItem("email") === "undefined") {
       navigate("/time-tracker-frontend/Admin");
-    } else if (localStorage.getItem("email")) {
+    } else if (
+      localStorage.getItem("email") === "dhobimate.manipal@gmail.com"
+    ) {
       navigate("/time-tracker-frontend/");
     } else if (localStorage.getItem("email") === null) {
       navigate("/time-tracker-frontend/Signin");
@@ -64,9 +66,10 @@ function Admin() {
       );
       setLogData(response.data[0].loginLogoutTimes);
       calculateAverageDurationForMonth(response.data[0].loginLogoutTimes);
-      console.log("Data fetched successfully");
     } catch (error) {
-      console.error("Error fetching data:", error);
+      if (error) {
+        setLogData([]);
+      }
     }
   };
 
@@ -134,6 +137,7 @@ function Admin() {
 
   const logOut = () => {
     navigate("/time-tracker-frontend/Signin");
+    localStorage.clear();
   };
 
   const handleTimeChange = (field, value) => {
@@ -164,7 +168,6 @@ function Admin() {
       loginHours,
       loginMinutes
     );
-    console.log(entry.date);
 
     let updatedLogoutDate = null;
 
@@ -205,8 +208,6 @@ function Admin() {
         }
       );
       fetchData();
-
-      console.log("Login and logout times updated successfully");
     } catch (error) {
       console.error("Error updating login and logout times:", error);
     }
