@@ -1,0 +1,163 @@
+.signin {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/signin/background.png');
+    background-size: 1000px;
+}
+
+.signin .logo {
+    text-align: center;;
+   padding-top: 30px;
+   margin-bottom: 150px;
+}
+
+.signin .alert {
+    border: #EC8884 1px solid;
+    border-radius: 5px;
+    width: 35%;
+    background-color: #FDF5F5;
+    color: #B53D37;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    left: 30%;
+    transition: top 0.5s ease;
+}
+
+.alert img {
+    margin-right: 10px;
+}
+
+.signin .note {
+    position: absolute;
+    left: 60px;
+    top: 80px;
+    filter: drop-shadow(-13px 11px 4px rgba(0, 0, 0, 0.35));
+    z-index: 0;
+}
+
+.signin .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.container .error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .signinContainer {
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: 'Archivo', sans-serif;
+    padding: 40px 60px 60px 60px;
+    width: 330px;
+    box-shadow: 1px 1px 14px 6px rgba(0, 0, 0, 0.25);
+}
+
+.signinContainer h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.signinContainer .input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    margin-top: 35px;
+    padding: 12px;
+    position:relative;
+}
+
+.input input {
+    border: none;
+    background-color: #EEEEEE;
+    font-size: 0.99rem;
+    width: 400px;
+}
+
+.input img {
+    opacity: 0.4;
+    margin-right: 10px;
+}
+
+.input .view {
+    position: relative;
+    right: -10px;
+}
+
+.view img:hover {
+    cursor: pointer
+}
+
+.signinContainer .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.checkbox input:hover {
+    cursor: pointer;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.checkbox p {
+    font-size: 0.89rem
+}
+
+.signinContainer .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003861;
+    border-radius: 5px;
+    padding: 13px;
+    margin-top: 45px;
+}
+
+.button p {
+    color: #fff;
+    font-size: 0.9rem
+}
+
+.signinContainer .button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1149px) {
+    .signin .logo {
+        margin-bottom: 170px;
+    }
+
+    .signin .note img{
+width: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .signin .signinContainer {
+        width: 60%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+     .signinContainer .input .view {
+        display: none;
+     }
+ }

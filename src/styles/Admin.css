@@ -1,0 +1,377 @@
+.admin {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background-image: url('../assets/background.png');
+    background-size: 1000px;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #003861;
+    position: fixed;
+    font-family: 'Archivo', sans-serif;
+}
+
+
+.sidebar h2 {
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 70px;
+}
+
+.sidebar .clock {
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.sidebar .home {
+    background-color: #00487A;
+}
+
+.options {
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+.options p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.admin .storeSelection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 0 0;
+    margin-left: 22%;
+}
+
+.storeSelection .logOut {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.storeSelection .logOut:hover {
+    cursor: pointer
+}
+
+.logOut .view{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    font-size: 0.9rem;
+}
+
+.logOut .view:hover {
+    background-color: #E6E6E6;
+    cursor: pointer;
+}
+
+.logOut .hidden {
+    display: none;
+}
+
+.storeSelection select {
+    border-radius: 3px;
+    border: 1px solid #C2C2C2;
+    padding: 10px;
+    background-color: #E6E6E6;
+    font-size: 0.92rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none; */
+}
+
+.admin .rightside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.rightside .firstContainer {
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 15px 20px 25px 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 25.1px -6px rgba(0, 0, 0, 0.25); */
+}
+
+.firstContainer select {
+    align-self: flex-end;
+    border: none;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.firstContainer h6 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 0.7rem
+}
+
+.firstContainer p {
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #00487B;
+    font-family: "Gurajada", sans-serif;
+line-height: 1.5rem;
+}
+
+.admin .secondContainer {
+    background-image: url('../assets//homepage//welcome-bg.png');
+    border-radius: 5px;
+padding: 10px 15px 10px 20px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+margin-right: 5%;
+width: 65%;
+}
+
+.secondContainer h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: "Boogaloo", sans-serif;
+    margin-bottom: 15px;
+}
+
+.secondContainer p{
+    color: #00487B;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    font-family: "Gurajada", sans-serif;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+.secondContainer .date {
+    font-size: 2.2rem;
+}
+
+.secondContainer .laundryImage {
+    position: absolute;
+    right: 50px;
+}
+
+
+.table {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 70%;
+    height: 600px;
+    margin-left: 25%;
+    margin-top: 30px;
+    padding: 0 0 15px 0;
+    overflow: hidden;
+overflow-y: auto;
+overflow-x:auto;
+
+}
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+.tableHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 10px 25px;
+    position: sticky;
+    top: 0;
+    background-color: #00487A;
+    min-width: 700px;
+}
+
+.tableHead h3 {
+    font-weight: 500;
+    color: #fff
+}
+
+.table select {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.table select:focus {
+    outline: none;
+}
+
+.tableSubHead {
+    display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 25px 20px 30px;
+position: sticky;
+top: 59px;
+background-color: #00487A;
+min-width: 700px;
+}
+
+
+.tableSubHead h6 {
+    color: #fff;
+font-size: 0.85rem;
+margin-right: 150px;
+margin-left: 10px;
+}
+
+.tableBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 35px 20px 30px;
+    white-space: nowrap; 
+    min-width: 690px;
+}
+
+.tableBody input {
+    text-align: center;
+    padding: 5px;
+    width: 130px;
+}
+
+.tableBody .edit {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    background-color: #32CF24;
+    color: #fff;
+}
+
+.tableBody .edit:hover {
+    cursor: pointer;
+    background-color: #2FC422;
+}
+
+@media only screen and (max-width: 1149px) {
+.sidebar {
+    width: 20%;
+}
+
+.rightside .firstContainer {
+    width: 190px;
+}
+
+.firstContainer h6 {
+    width: 160px;
+}
+
+.secondContainer .laundryImage {
+    display: none;
+}
+
+.secondContainer p {
+    width: 97%;
+}
+
+.table .tableSubHead h6 {
+    margin-right: 95px;
+    margin-left: 5px;
+}
+
+    }
+
+ @media only screen and (min-width: 1000px) {
+        .sidebar .clock {
+            display: none;
+        }
+        }
+
+@media only screen and (max-width: 1000px) {
+    .admin .sidebar {
+        width: 70px;
+    }
+
+    .sidebar .options p{
+        display: none;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .admin .rightside {
+        margin-left: 12%;
+    }
+
+    .admin .table {
+        margin-left: 12%;
+        width: 81%;
+    }
+
+    .admin .storeSelection {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .admin .sidebar {
+        width: 50px;
+    }
+
+    .sidebar .clock, .sidebar .report, .sidebar .options {
+        padding-left: 8px;
+    }
+
+    .rightside .secondContainer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .rightside .secondContainer h1 {
+        margin-bottom: 10px;
+    }
+
+    .rightside .secondContainer p{
+font-size: 1.2rem;
+line-height: 1.3rem;
+padding: 0;
+margin-bottom: 10px;
+    }
+
+    .rightside .secondContainer .date {
+        font-size: 1.9rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .admin .rightside {
+        justify-content: center;
+    }
+
+   .rightside .secondContainer {
+    display: none;
+   }
+
+   .admin .table {
+    margin-left: 15%;
+   }
+   .admin .storeSelection {
+    margin-left: 13%;
+}
+
+}

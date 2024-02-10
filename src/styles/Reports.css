@@ -1,0 +1,212 @@
+.reports {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/background.png');
+    background-size: 1000px;
+    z-index: 1;
+display: flex;
+justify-content: space-between;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #003861;
+    position: fixed;
+    font-family: 'Archivo', sans-serif;
+}
+
+
+.sidebar h2 {
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 70px;
+}
+
+.sidebar .clock {
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.sidebar .report {
+    background-color: #00487A;
+}
+
+.options {
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+.options p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.options:hover {
+    background-color: #00487A;
+    cursor: pointer;
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 68%;
+    height: 80%;
+    margin-left: 25%;
+    margin-top: 70px;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+overflow-y: auto;
+}
+
+.tableHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 10px 25px;
+    position: sticky;
+    top: 0;
+    background-color: #00487A;
+}
+
+.tableHead h3 {
+    font-weight: 500;
+    color: #fff
+}
+
+.table select {
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.table select:focus {
+    outline: none;
+}
+
+.tableSubHead {
+    display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 25px 20px 30px;
+position: sticky;
+top: 59px;
+background-color: #00487A;
+}
+
+
+.tableSubHead h6 {
+    color: #fff;
+font-size: 0.85rem;
+}
+
+.tableBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 35px 20px 30px;
+}
+
+@media only screen and (max-width: 1149px) {
+    .sidebar {
+        width: 20%;
+    }
+
+    .table {
+        width: 65%;
+        margin-left: 30%;;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .reports .sidebar {
+        width: 70px;
+    }
+
+    .sidebar .options p{
+        display: none;
+    }
+
+    .sidebar h2 {
+        display: none;
+    }
+
+    .table {
+        width: 75%;
+        margin-left: 18%;;
+    }
+
+    .table p {
+        font-size: 0.95rem;
+    }
+}
+
+@media only screen  and (max-width: 600px) {
+    .table p {
+        font-size: 0.9rem;
+    }
+
+     /* .loginHeader, .logoutHeader, .logInTime, .logOutTime {
+        display: none;
+     } */
+
+     /* .tableSubHead h6 {
+        margin-left: 15%;
+        margin-right: 20%;
+     } */
+
+     /* .tableBody .date {
+        margin-left: 15%;
+     }
+
+     .tableBody .duration {
+        margin-right: 22% !important;
+     } */
+}
+
+@media only screen  and (max-width: 500px) {
+    .table {
+margin-left: 20%;
+    }
+
+    /* .tableSubHead h6 {
+        margin-left: 9%;
+        margin-right: 10%;
+     }
+
+    .tableBody .date {
+        margin-left: 10%;
+     }
+
+     .tableBody .duration {
+        margin-right: 10% !important;
+     } */
+}
+
+@media only screen and (max-width: 400px) {
+    .reports .sidebar {
+        width: 50px;
+    }
+
+    .sidebar .clock, .sidebar .report, .sidebar .options {
+        padding-left: 8px;
+    }
+
+    /* .tableSubHead h6 {
+        margin-left: 2%;
+        margin-right: 2%;
+     } */
+
+    /* .tableBody .date {
+        margin-left: 2%;
+     } */
+
+     /* .tableBody .duration {
+        margin-right: 2% !important;
+     } */
+}
