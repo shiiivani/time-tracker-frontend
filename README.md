@@ -16,4 +16,4 @@ Design: Figma
 Frontend: GitHub Pages
 Backend: Render
 
-To see it live visit this link: https://shiiivani.github.io/time-tracker-frontend/
+To see it live visit this link: https://shiiivani.github.io/

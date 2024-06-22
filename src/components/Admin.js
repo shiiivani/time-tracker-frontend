@@ -31,13 +31,13 @@ function Admin() {
     setCurrentDate(currentDate);
     getGreetingMessage();
     if (localStorage.getItem("email") === "undefined") {
-      navigate("/time-tracker-frontend/Admin");
+      navigate("/Admin");
     } else if (
       localStorage.getItem("email") === "dhobimate.manipal@gmail.com"
     ) {
-      navigate("/time-tracker-frontend/");
+      navigate("/");
     } else if (localStorage.getItem("email") === null) {
-      navigate("/time-tracker-frontend/Signin");
+      navigate("/Signin");
     }
   }, []);
 
@@ -136,7 +136,7 @@ function Admin() {
   };
 
   const logOut = () => {
-    navigate("/time-tracker-frontend/Signin");
+    navigate("/Signin");
     localStorage.clear();
   };
 

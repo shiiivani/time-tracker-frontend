@@ -44,7 +44,7 @@ function Signin() {
           email === "admin@dhobimate.com" &&
           password === "1234567890"
         ) {
-          navigate("/time-tracker-frontend/Admin");
+          navigate("/Admin");
           localStorage.setItem("email", user.data.email);
         } else if (
           (password === "1234567890" &&
@@ -52,7 +52,7 @@ function Signin() {
           "dhobimate.cvramannagar@gmail.com" ||
           "dhobimate.koramangala@gmail.com"
         ) {
-          navigate("/time-tracker-frontend/");
+          navigate("/");
           localStorage.setItem("email", user.data.email);
         } else {
           setErr(true);
@@ -71,13 +71,13 @@ function Signin() {
       setShowPreloader(false);
     }, 2000);
     if (localStorage.getItem("email") === "undefined") {
-      navigate("/time-tracker-frontend/Admin");
+      navigate("/Admin");
     } else if (
       localStorage.getItem("email") === "dhobimate.manipal@gmail.com"
     ) {
-      navigate("/time-tracker-frontend/");
+      navigate("/");
     } else if (localStorage.getItem("email") === null) {
-      navigate("/time-tracker-frontend/Signin");
+      navigate("/Signin");
     }
     return () => clearTimeout(delayTimeout);
   }, []);

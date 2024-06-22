@@ -76,10 +76,7 @@ function Reports() {
       <div className="sidebar">
         <h2>STORE TIME TRACKER</h2>
         <img className="clock" src={clock} width="35px" />
-        <div
-          className="options"
-          onClick={() => navigate("/time-tracker-frontend/")}
-        >
+        <div className="options" onClick={() => navigate("/")}>
           <img src={home} width="25px" />
           <p>Home</p>
         </div>

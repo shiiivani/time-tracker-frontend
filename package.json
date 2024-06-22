@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "homepage": "http://shiiivani.github.io/time-tracker-frontend",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

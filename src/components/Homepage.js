@@ -28,13 +28,13 @@ function Homepage() {
     setCurrentDate(currentDate);
     getGreetingMessage();
     if (localStorage.getItem("email") === "undefined") {
-      navigate("/time-tracker-frontend/Admin");
+      navigate("/Admin");
     } else if (
       localStorage.getItem("email") === "dhobimate.manipal@gmail.com"
     ) {
-      navigate("/time-tracker-frontend/");
+      navigate("/");
     } else if (localStorage.getItem("email") === null) {
-      navigate("/time-tracker-frontend/Signin");
+      navigate("/Signin");
     }
   }, []);
 
@@ -50,7 +50,7 @@ function Homepage() {
   };
 
   const logOut = () => {
-    navigate("/time-tracker-frontend/Signin");
+    navigate("/Signin");
     localStorage.clear();
   };
 
@@ -182,10 +182,7 @@ function Homepage() {
           <img src={home} width="25px" />
           <p>Home</p>
         </div>
-        <div
-          className="options"
-          onClick={() => navigate("/time-tracker-frontend/Reports")}
-        >
+        <div className="options" onClick={() => navigate("/Reports")}>
           <img src={report} width="25px" />
           <p>Report</p>
         </div>

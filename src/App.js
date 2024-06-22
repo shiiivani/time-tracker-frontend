@@ -9,10 +9,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/time-tracker-frontend/Admin" element={<Admin />} />
-        <Route path="/time-tracker-frontend/" element={<Homepage />} />
-        <Route path="/time-tracker-frontend/Signin" element={<Signin />} />
-        <Route path="/time-tracker-frontend/Reports" element={<Reports />} />
+        <Route path="/Admin" element={<Admin />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Signin" element={<Signin />} />
+        <Route path="/Reports" element={<Reports />} />
       </Routes>
     </Router>
   );
